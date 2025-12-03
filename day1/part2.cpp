@@ -26,9 +26,10 @@ int main() {
         } else if (current > MAX_VALUE) {
             total += current / (MAX_VALUE + 1);
         }
-        
+
         current %= MAX_VALUE + 1;
-        if (current < 0) current += MAX_VALUE + 1;
+        if (current < 0)
+            current += MAX_VALUE + 1;
 
         std::cout << line << ": " << total << std::endl;
     }

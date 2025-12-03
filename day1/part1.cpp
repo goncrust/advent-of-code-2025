@@ -17,9 +17,11 @@ int main() {
 
         op == 'R' ? current += step : current -= step;
         current %= MAX_VALUE + 1;
-        if (current < 0) current += MAX_VALUE + 1;
+        if (current < 0)
+            current += MAX_VALUE + 1;
 
-        if (current == 0) total++;
+        if (current == 0)
+            total++;
     }
 
     std::cout << total << std::endl;
